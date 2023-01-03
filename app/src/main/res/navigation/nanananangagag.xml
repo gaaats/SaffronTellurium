@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nanananangagag"
+    app:startDestination="@id/ennnnttttFragment">
+
+    <fragment
+        android:id="@+id/ennnnttttFragment"
+        android:name="com.superplusgames.hosandr.EnnnnttttFragment"
+        android:label="fragment_ennnntttt"
+        tools:layout="@layout/fragment_ennnntttt" >
+        <action
+            android:id="@+id/action_ennnnttttFragment_to_gaaaameFragment"
+            app:destination="@id/gaaaameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gaaaameFragment"
+        android:name="com.superplusgames.hosandr.GaaaameFragment"
+        android:label="fragment_gaaaame"
+        tools:layout="@layout/fragment_gaaaame" >
+        <action
+            android:id="@+id/action_gaaaameFragment_to_restartttttrrfrFragment"
+            app:destination="@id/restartttttrrfrFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restartttttrrfrFragment"
+        android:name="com.superplusgames.hosandr.RestartttttrrfrFragment"
+        android:label="fragment_restartttttrrfr"
+        tools:layout="@layout/fragment_restartttttrrfr" >
+        <action
+            android:id="@+id/action_restartttttrrfrFragment_to_gaaaameFragment"
+            app:destination="@id/gaaaameFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/gaaaameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
